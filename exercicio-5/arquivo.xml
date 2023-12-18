@@ -1,0 +1,16 @@
+<dados>
+    <dados>
+        <nome>Joana</nome>
+        <sobrenome>Silva</sobrenome>
+        <idade>20</idade>
+        <email>joana@ciandt.com</email>
+        <login>joana12</login>
+    </dados>
+    <dados>
+        <nome>Lucas</nome>
+        <sobrenome>Andrade</sobrenome>
+        <idade>21</idade>
+        <email>lucas@ciandt.com</email>
+        <login>lucas87</login>
+    </dados>
+</dados>
