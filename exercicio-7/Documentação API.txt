@@ -1,0 +1,50 @@
+Documentação para utilização da API.
+
+- Acessando a API:
+Para uso da API foi utilizado o Postman para testes.
+
+- Exemplos de dados com formato JSON: 
+{
+    "nome": "Lucas",
+    "sobrenome": "Silva",
+    "email": "lucassilva@hotmail.com",
+    "telefone": "11-532486915"
+},
+{
+    "nome": "Maria",
+    "sobrenome": "José",
+    "email": "mariajose@gmail.com",
+    "telefone": "41-616823525"
+},
+{
+    "nome": "Joana",
+    "sobrenome": "Alencar",
+    "email": "joanaalencar@yahoo.com",
+    "telefone": "88-987654321"
+},
+{
+    "nome": "José",
+    "sobrenome": "Pedro",
+    "email": "josepedro@outlook.com",
+    "telefone": "85-123456789"
+}
+
+- Endpoints da API:
+Listar todos os usuários
+Método: GET
+Endpoint: http://localhost:8000/exercicio-7/usuarios
+
+Adicionar um novo usuário
+Método: POST
+Endpoint: http://localhost:8000/exercicio-7/usuarios
+Corpo da requisição: JSON contendo os dados do novo usuário (Nome, Sobrenome, Email, Telefone)
+
+Deletar um usuário por e-mail
+Método: DELETE
+Endpoint: http://localhost:8000/exercicio-7/usuarios?email=email_do_usuario_a_ser_deletado
+
+Atualizar os dados de um usuário por e-mail
+Método: PUT
+Endpoint: http://localhost:8000/exercicio-7/usuarios?email=email_do_usuario_a_ser_atualizado
+Corpo da requisição: JSON contendo os novos dados do usuário (Nome, Sobrenome, Email, Telefone)
+Este exemplo utiliza um arquivo de texto simples para armazenar os dados dos usuários em formato JSON. Para uma aplicação mais robusta e escalável, considere o uso de um banco de dados para armazenamento. Além disso, é altamente recomendável implementar validações e medidas de segurança adequadas antes de usar esta API em um ambiente de produção.
