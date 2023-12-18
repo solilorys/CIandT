@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<style>
+    div{
+        display: flex;
+        flex-direction: column;
+        padding: 0.75rem;
+    }
+    input {
+        width: 9rem;
+    }
+</style>
+<body>
+    <form action="/exercicio-4/form.php" method="post">
+        <div>
+            <label for="nome">Nome</label>
+            <input name="nome" type="text" id="nome" required autofocus>
+        </div>
+        <div>
+            <label for="sobrenome">Sobrenome</label>
+            <input name="sobrenome" type="text" id="sobrenome" required autofocus>
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input name="email" type="email" id="email" required autofocus>
+        </div>
+        <div>
+            <label for="telefone">Telefone</label>
+            <input name="telefone" type="text" id="telefone" required autofocus>
+        </div>
+        <div>
+            <label for="login">Login</label>
+            <input name="login" type="text" id="login" required autofocus>
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required autofocus>
+        </div>
+         
+        <input type="submit" value="Enviar" style="margin-left: 15px;">
+    </form>
+</body>
+</html>
